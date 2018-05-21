@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loginApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <nav class="site-header sticky-top py-1">
+        <div class="container d-flex flex-column flex-md-row justify-content-between">
+          <a class="py-2" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mx-auto"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+          </a>
+          <span class="pull-right">
+          <a class="py-2 d-none d-md-inline-block btn btn-success" ng-href="#!/login">Login </a>
+          <a class="py-2 d-none d-md-inline-block btn btn-success" ng-href="#!/register">Register</a>
+        </span>
+        </div>
+</nav>
+<div class="container">
+    <main ng-view></main>
+  </div>
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDHAC-01wqVAcZbowsVhJ9vMx346_ibPOk",
+        authDomain: "firstapp-c5c91.firebaseapp.com",
+        databaseURL: "https://firstapp-c5c91.firebaseio.com",
+        projectId: "firstapp-c5c91",
+        storageBucket: "firstapp-c5c91.appspot.com",
+        messagingSenderId: "588519593549"
+      };
+      firebase.initializeApp(config);
+    </script>">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+<script src="js/app.js"></script>    
+<script src="js/registerCtr.js"></script>
+<script src="js/successCtr.js"></script>
+</body>
+</html>
